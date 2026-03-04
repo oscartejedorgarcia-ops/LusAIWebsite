@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/fileupload.tsx","./src/components/navbar.tsx","./src/components/usecasecard.tsx","./src/content/en.ts","./src/data/usecases.ts","./src/pages/home.tsx","./src/pages/usecasedetail.tsx"],"version":"5.9.3"}

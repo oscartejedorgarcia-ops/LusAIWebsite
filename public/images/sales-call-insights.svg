@@ -1,0 +1,54 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Sales call insights compliance illustration</title>
+  <desc id="desc">A call center operator using AI with a certified compliant sign that confirms internal policy compliance.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF3F0"/>
+      <stop offset="1" stop-color="#F7FBFA"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1400" height="1000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)"/>
+
+  <rect x="70" y="80" width="1060" height="640" rx="28" fill="#FFFFFF" stroke="#D9E5E1" stroke-width="2" filter="url(#shadow)"/>
+
+  <rect x="120" y="145" width="510" height="510" rx="20" fill="#F4F8F7" stroke="#DDE7E4"/>
+
+  <circle cx="300" cy="300" r="78" fill="#C9D8D3"/>
+  <rect x="225" y="388" width="150" height="165" rx="32" fill="#B7CAC4"/>
+
+  <path d="M228 293C228 252 260 220 300 220C340 220 372 252 372 293" stroke="#5C746D" stroke-width="16" stroke-linecap="round"/>
+  <rect x="214" y="297" width="28" height="68" rx="12" fill="#5C746D"/>
+  <rect x="358" y="297" width="28" height="68" rx="12" fill="#5C746D"/>
+  <rect x="272" y="328" width="56" height="14" rx="7" fill="#6B8A82"/>
+
+  <rect x="420" y="220" width="180" height="145" rx="14" fill="#FFFFFF" stroke="#D9E5E1"/>
+  <text x="440" y="252" fill="#2F4E46" font-size="18" font-family="Arial, sans-serif" font-weight="700">AI Assistant</text>
+  <rect x="440" y="270" width="130" height="10" rx="5" fill="#9FC1B7"/>
+  <rect x="440" y="288" width="145" height="10" rx="5" fill="#9FC1B7"/>
+  <rect x="440" y="306" width="110" height="10" rx="5" fill="#9FC1B7"/>
+
+  <rect x="420" y="390" width="180" height="190" rx="14" fill="#FFFFFF" stroke="#D9E5E1"/>
+  <text x="438" y="426" fill="#2F4E46" font-size="16" font-family="Arial, sans-serif" font-weight="700">Call Summary</text>
+  <rect x="438" y="444" width="142" height="9" rx="4" fill="#BFD5CE"/>
+  <rect x="438" y="460" width="150" height="9" rx="4" fill="#BFD5CE"/>
+  <rect x="438" y="476" width="124" height="9" rx="4" fill="#BFD5CE"/>
+  <rect x="438" y="500" width="28" height="28" rx="6" fill="#DDF1EA"/>
+  <path d="M446 514L454 522L468 507" stroke="#3D7A68" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="476" y="518" fill="#3D7A68" font-size="13" font-family="Arial, sans-serif">Policy checks passed</text>
+
+  <rect x="680" y="145" width="400" height="510" rx="20" fill="#EEF5F2" stroke="#D7E4E0"/>
+  <text x="720" y="210" fill="#2E5249" font-size="34" font-family="Arial, sans-serif" font-weight="700">CERTIFIED</text>
+  <text x="720" y="246" fill="#3B6A5F" font-size="24" font-family="Arial, sans-serif" font-weight="700">Compliant with Internal Policies</text>
+
+  <circle cx="880" cy="385" r="122" fill="#E1F0EB" stroke="#9EC6B8" stroke-width="4"/>
+  <circle cx="880" cy="385" r="96" fill="#FFFFFF" stroke="#9EC6B8" stroke-width="3"/>
+  <path d="M830 386L865 421L936 349" stroke="#2F7D67" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="730" y="555" width="300" height="56" rx="12" fill="#FFFFFF" stroke="#D7E4E0"/>
+  <text x="752" y="589" fill="#406A60" font-size="20" font-family="Arial, sans-serif" font-weight="700">Verified by policy engine</text>
+</svg>
