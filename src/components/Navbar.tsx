@@ -65,9 +65,9 @@ function Navbar() {
               onChange={(event) => setLocale(event.target.value as Locale)}
               aria-label={nav.language}
             >
-              <option value="en">{nav.languageOptions.en}</option>
-              <option value="es">{nav.languageOptions.es}</option>
-              <option value="pt">{nav.languageOptions.pt}</option>
+              <option value="en">EN</option>
+              <option value="es">ES</option>
+              <option value="pt">PT</option>
             </select>
           </label>
         </nav>
