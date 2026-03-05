@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Automated Quality Control - Gas Meter Installation Checklist</title>
+  <desc id="desc">A real gas meter installation photo on the left and a checklist panel on the right. The first two checks pass and the third fails.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef4f2" />
+      <stop offset="100%" stop-color="#dfe9e5" />
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f5f9f7" />
+    </linearGradient>
+    <clipPath id="photoClip">
+      <rect x="70" y="130" width="680" height="580" rx="20" />
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)" />
+  <rect x="40" y="60" width="730" height="680" rx="24" fill="url(#panel)" stroke="#cfdcd7" stroke-width="2" />
+  <rect x="790" y="60" width="370" height="680" rx="24" fill="url(#panel)" stroke="#cfdcd7" stroke-width="2" />
+
+  <text x="80" y="110" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#243732">
+    Home Gas Counter Installation
+  </text>
+
+  <image
+    href="https://commons.wikimedia.org/wiki/Special:FilePath/Gas_meter.JPG"
+    x="70"
+    y="130"
+    width="680"
+    height="580"
+    preserveAspectRatio="xMidYMid slice"
+    clip-path="url(#photoClip)"
+  />
+  <rect x="70" y="130" width="680" height="580" rx="20" fill="none" stroke="#c6d6d0" stroke-width="2" />
+
+  <rect x="90" y="650" width="450" height="46" rx="10" fill="rgba(22,34,31,0.72)" />
+  <text x="110" y="679" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#f4fbf8">
+    Gas counter installation capture validated by AI
+  </text>
+
+  <text x="815" y="115" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700" fill="#243732">
+    Quality Checks
+  </text>
+
+  <rect x="815" y="150" width="320" height="145" rx="14" fill="#edf7f3" stroke="#c4ddd3" />
+  <circle cx="853" cy="197" r="19" fill="#2f7a57" />
+  <path d="M844 197 l7 8 l12 -14" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="885" y="191" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#2a403a">
+    Meter mounted securely
+  </text>
+  <text x="885" y="216" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#3c5a52">
+    Status: Passed
+  </text>
+  <text x="885" y="239" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#55706a">
+    Bracket fix and alignment confirmed.
+  </text>
+  <text x="885" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#55706a">
+    No movement detected after vibration.
+  </text>
+
+  <rect x="815" y="320" width="320" height="145" rx="14" fill="#edf7f3" stroke="#c4ddd3" />
+  <circle cx="853" cy="367" r="19" fill="#2f7a57" />
+  <path d="M844 367 l7 8 l12 -14" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="885" y="361" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#2a403a">
+    Pipe connections sealed
+  </text>
+  <text x="885" y="386" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#3c5a52">
+    Status: Passed
+  </text>
+  <text x="885" y="409" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#55706a">
+    Joint integrity and coupling torque
+  </text>
+  <text x="885" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#55706a">
+    validated within target thresholds.
+  </text>
+
+  <rect x="815" y="490" width="320" height="145" rx="14" fill="#fdf1f1" stroke="#ecc5c5" />
+  <circle cx="853" cy="537" r="19" fill="#a74b4b" />
+  <line x1="845" y1="529" x2="861" y2="545" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+  <line x1="861" y1="529" x2="845" y2="545" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+  <text x="885" y="531" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#5d2d2d">
+    Leak pressure test
+  </text>
+  <text x="885" y="556" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#7a4545">
+    Status: Failed
+  </text>
+  <text x="885" y="579" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#8c5555">
+    Pressure drop exceeded tolerance.
+  </text>
+  <text x="885" y="600" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#8c5555">
+    Follow-up inspection required.
+  </text>
+</svg>

@@ -1,8 +1,29 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import UseCaseCard from '../components/UseCaseCard';
 import { landingContent } from '../content/en';
 import { CONTACT, useCases } from '../data/useCases';
 
 function Home() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!location.hash) {
+      return;
+    }
+
+    const sectionId = location.hash.replace('#', '');
+    const section = document.getElementById(sectionId);
+    if (!section) {
+      return;
+    }
+
+    // Wait one frame to ensure the section is mounted before scrolling.
+    requestAnimationFrame(() => {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }, [location.hash]);
+
   return (
     <div className="container">
       <section id="home" className="section hero-section">

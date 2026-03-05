@@ -110,10 +110,10 @@ export const landingContent = {
   howWeWork: {
     title: 'How we work',
     steps: [
-      'Discovery & objectives',
-      'Short proof of value (2–4 weeks)',
-      'Incremental implementation',
-      'Secure operations & continuous improvement'
+      'Quick analysis (Free)',
+      'Impact analysis',
+      'Development',
+      'Deployment & Continuous improvement'
     ]
   }
 };

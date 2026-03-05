@@ -255,6 +255,8 @@ h3 {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 14px;
@@ -274,8 +276,59 @@ h3 {
   object-fit: cover;
 }
 
+.quality-card-image {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  width: 100%;
+  height: 180px;
+  background: #eef3f1;
+}
+
+.quality-card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quality-card-checks {
+  padding: 0.5rem;
+  background: #f7faf9;
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+}
+
+.quality-card-title {
+  margin: 0 0 0.15rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.quality-check {
+  margin: 0;
+  border-radius: 6px;
+  padding: 0.35rem 0.4rem;
+  line-height: 1.3;
+}
+
+.quality-check-pass {
+  background: #e8f5ee;
+  color: #255e44;
+}
+
+.quality-check-fail {
+  background: #fdecec;
+  color: #8c3f3f;
+}
+
 .card-content {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
 }
 
 .card-content p {
@@ -295,6 +348,11 @@ h3 {
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
+}
+
+.card-link {
+  align-self: flex-start;
+  margin-top: auto;
 }
 
 .card-link:hover,
@@ -375,8 +433,6 @@ h3 {
 }
 
 .detail-image {
-  width: 100%;
-  height: auto;
   display: block;
 }
 
