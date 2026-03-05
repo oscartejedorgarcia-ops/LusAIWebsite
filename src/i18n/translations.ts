@@ -124,7 +124,7 @@ const portugueseUI: UIStrings = {
 
 const spanishLandingContent: TranslationPack['landingContent'] = {
   hero: {
-    eyebrow: 'Lus AI (Learning Understanding Systems)',
+    eyebrow: 'Lus-AI (Learning Understanding Systems)',
     title: 'Servicios de consultoría en IA, Datos y LLM para resultados reales de negocio',
     subtitle:
       'Ofrecemos consultoría de IA ajustada al contexto, estrategia de datos e integración de LLM con entrega segura por diseño. Las soluciones se alinean con la soberanía europea y pueden ejecutarse on-premises, en nube privada, nube pública o en el edge.',
@@ -244,7 +244,7 @@ const spanishLandingContent: TranslationPack['landingContent'] = {
 
 const portugueseLandingContent: TranslationPack['landingContent'] = {
   hero: {
-    eyebrow: 'Lus AI (Learning Understanding Systems)',
+    eyebrow: 'Lus-AI (Learning Understanding Systems)',
     title: 'Serviços de consultoria em IA, Dados e LLM para resultados reais de negócio',
     subtitle:
       'Oferecemos consultoria de IA sob medida, estratégia de dados e integração de LLM com entrega segura por design. As soluções são alinhadas à soberania europeia e podem rodar on-premises, nuvem privada, nuvem pública ou na borda.',

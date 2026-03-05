@@ -30,9 +30,9 @@ function Navbar() {
     <header className="top-nav">
       <div className="container nav-inner">
         <Link to="/" className="logo-link">
-          <img src="/images/lus-icon.png" alt="Lus AI logo" className="logo-icon" />
+          <img src="/images/lus-icon.png" alt="Lus-AI logo" className="logo-icon" />
           <span className="logo-text">
-            <span>Lus AI</span>
+            <span>Lus-AI</span>
           </span>
         </Link>
         <nav className="nav-links">

@@ -1,6 +1,6 @@
 export const landingContent = {
   hero: {
-    eyebrow: 'Lus AI (Learning Understanding Systems)',
+    eyebrow: 'Lus-AI (Learning Understanding Systems)',
     title: 'AI, Data and LLM consultancy services for real business outcomes',
     subtitle:
       'We provide right-sized AI consulting, data strategy, and LLM integration with secure-by-design delivery. Solutions are aligned with European sovereignty and can run on-premises, private cloud, public cloud, or at the edge.',
