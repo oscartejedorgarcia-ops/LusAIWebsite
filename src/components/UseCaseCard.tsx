@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import AutomatedQualityPreview from './AutomatedQualityPreview';
 import { UseCase } from '../data/useCases';
+import { useLanguage } from '../i18n/LanguageContext';
 
 interface UseCaseCardProps {
   useCase: UseCase;
@@ -8,6 +9,8 @@ interface UseCaseCardProps {
 
 function UseCaseCard({ useCase }: UseCaseCardProps) {
   const isAutomatedQualityControl = useCase.id === 'knowledge-search';
+  const { translation } = useLanguage();
+  const { useCase: useCaseUi } = translation.ui;
 
   return (
     <article className="card">
@@ -21,7 +24,7 @@ function UseCaseCard({ useCase }: UseCaseCardProps) {
         <p>{useCase.shortDescription}</p>
 
         <Link to={`/use-cases/${useCase.id}`} className="card-link">
-          View details
+          {useCaseUi.viewDetails}
         </Link>
       </div>
     </article>

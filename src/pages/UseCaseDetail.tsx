@@ -1,19 +1,21 @@
 import { Link, useParams } from 'react-router-dom';
 import AutomatedQualityPreview from '../components/AutomatedQualityPreview';
-import { useCases } from '../data/useCases';
+import { useLanguage } from '../i18n/LanguageContext';
 
 function UseCaseDetail() {
   const { id } = useParams<{ id: string }>();
-  const useCase = useCases.find((item) => item.id === id);
+  const { translation, localizedUseCases } = useLanguage();
+  const { useCase: useCaseUi } = translation.ui;
+  const useCase = localizedUseCases.find((item) => item.id === id);
   const isAutomatedQualityControl = useCase?.id === 'knowledge-search';
 
   if (!useCase) {
     return (
       <div className="container section">
-        <h1>Use case not found</h1>
-        <p>Please return to the use cases section and select a valid card.</p>
+        <h1>{useCaseUi.notFoundTitle}</h1>
+        <p>{useCaseUi.notFoundMessage}</p>
         <Link to="/#use-cases" className="button-link">
-          Back to Use Cases
+          {useCaseUi.backToUseCases}
         </Link>
       </div>
     );
@@ -22,7 +24,7 @@ function UseCaseDetail() {
   return (
     <div className="container section detail-page">
       <Link to="/#use-cases" className="button-link">
-        Back to Use Cases
+        {useCaseUi.backToUseCases}
       </Link>
 
       <article className="detail-card">
@@ -32,7 +34,7 @@ function UseCaseDetail() {
           <img src={useCase.imageUrl} alt={useCase.title} className="card-image detail-image" />
         )}
         <div className="detail-content">
-          <p className="eyebrow">Use Case Detail</p>
+          <p className="eyebrow">{useCaseUi.detailEyebrow}</p>
           <h1>{useCase.title}</h1>
           <p>{useCase.longDescription}</p>
         </div>

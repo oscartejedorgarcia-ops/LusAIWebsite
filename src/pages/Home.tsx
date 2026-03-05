@@ -1,11 +1,14 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import UseCaseCard from '../components/UseCaseCard';
-import { landingContent } from '../content/en';
-import { CONTACT, useCases } from '../data/useCases';
+import { CONTACT } from '../data/useCases';
+import { useLanguage } from '../i18n/LanguageContext';
 
 function Home() {
   const location = useLocation();
+  const { translation, localizedUseCases } = useLanguage();
+  const { landingContent } = translation;
+  const { home } = translation.ui;
 
   useEffect(() => {
     if (!location.hash) {
@@ -69,7 +72,7 @@ function Home() {
               <article key={item.id} className="landing-card">
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-                <h4 className="card-subtitle">Examples</h4>
+                <h4 className="card-subtitle">{home.examples}</h4>
                 <ul className="expertise-examples">
                   {item.examples.map((example) => (
                     <li key={example}>{example}</li>
@@ -84,7 +87,7 @@ function Home() {
           <div className="section-heading">
             <h2 id="differentiators-title">{landingContent.differentiators.title}</h2>
           </div>
-          <ul className="landing-grid landing-grid-differentiators" aria-label="Key differentiators">
+          <ul className="landing-grid landing-grid-differentiators" aria-label={home.keyDifferentiatorsAria}>
             {landingContent.differentiators.items.map((item) => (
               <li key={item} className="landing-card landing-list-card">
                 <p>{item}</p>
@@ -97,7 +100,7 @@ function Home() {
           <div className="section-heading">
             <h2 id="how-we-work-title">{landingContent.howWeWork.title}</h2>
           </div>
-          <ol className="how-we-work" aria-label="LusAI delivery approach">
+          <ol className="how-we-work" aria-label={home.lusAIDeliveryAria}>
             {landingContent.howWeWork.steps.map((step, index) => (
               <li key={step} className="how-step">
                 <span className="how-step-index">{index + 1}</span>
@@ -110,12 +113,12 @@ function Home() {
 
       <section id="use-cases" className="section">
         <div className="section-heading">
-          <p className="eyebrow">Use Cases</p>
-          <h2>Explore Solutions</h2>
+          <p className="eyebrow">{home.useCasesEyebrow}</p>
+          <h2>{home.exploreSolutions}</h2>
         </div>
 
         <div className="cards-grid">
-          {useCases.map((useCase) => (
+          {localizedUseCases.map((useCase) => (
             <UseCaseCard key={useCase.id} useCase={useCase} />
           ))}
         </div>
@@ -123,17 +126,19 @@ function Home() {
 
       <section id="contact" className="section contact-section">
         <div className="section-heading">
-          <p className="eyebrow">Contact</p>
-          <h2>Get In Touch</h2>
+          <p className="eyebrow">{home.contactEyebrow}</p>
+          <h2>{home.getInTouch}</h2>
         </div>
 
         <p>
-          Email:{' '}
+          {home.emailLabel}:{' '}
           <a href={CONTACT.emailHref} className="contact-link">
             {CONTACT.emailDisplay}
           </a>
         </p>
-        <p>International: {CONTACT.phoneFormatted}</p>
+        <p>
+          {home.internationalLabel}: {CONTACT.phoneFormatted}
+        </p>
       </section>
     </div>
   );
